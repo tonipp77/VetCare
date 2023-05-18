@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/common_padding_default"
+    android:background="@drawable/wallpaper">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNameRegistrationPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        app:endIconMode="clear_text"
+        app:helperText="@string/helperText_required"
+        app:startIconDrawable="@drawable/ic_pets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNameRegistrationPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRegistrationPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSpeciesRegistrationPet"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/low_padding_default"
+        android:layout_marginTop="@dimen/low_padding_default"
+        android:layout_weight="50"
+        android:hint="@string/species"
+        app:endIconMode="clear_text"
+        app:helperText="@string/helperText_required"
+        app:startIconDrawable="@drawable/ic_pets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glRegistrationPet"
+        app:layout_constraintTop_toBottomOf="@+id/tilNameRegistrationPet" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSpeciesRegistrationPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBreedRegistrationPet"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/low_padding_default"
+        android:layout_marginTop="@dimen/low_padding_default"
+        android:layout_weight="50"
+        android:hint="@string/breed"
+        app:endIconMode="clear_text"
+        app:helperText=""
+        app:startIconDrawable="@drawable/ic_pets"
+        app:layout_constraintStart_toStartOf="@+id/glRegistrationPet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNameRegistrationPet">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBreedRegistrationPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbDangerousRegistrationPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low_padding_default"
+        android:text="@string/is_dangerous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilSpeciesRegistrationPet"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvGenderRegistrationPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low_padding_default"
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDangerousRegistrationPet"
+        style="@style/TextAppearance.Material3.BodyLarge"/>
+
+    <RadioGroup
+        android:id="@+id/rgGenderRegistrationPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderRegistrationPet">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb1GenderRegistrationPet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/male"/>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb2GenderRegistrationPet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/female"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgRegistrationPet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey_100"
+        android:layout_marginTop="@dimen/low_padding_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glRegistrationPet"
+        app:layout_constraintTop_toBottomOf="@+id/rgGenderRegistrationPet"
+        app:layout_constraintDimensionRatio="16:9"/>
+    
+    <ImageButton
+        android:id="@+id/ibRegistrationPet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_image_search"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="@+id/imgRegistrationPet"
+        app:layout_constraintEnd_toEndOf="@+id/imgRegistrationPet"
+        app:layout_constraintTop_toTopOf="@+id/imgRegistrationPet"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRegistrationPet"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pbRegistrationPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:progress="75"
+        app:layout_constraintStart_toStartOf="@id/tilBreedRegistrationPet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgRegistrationPet"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvProgressRegistrationPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low_padding_default"
+        tools:text="Subiendo...75%"
+        app:layout_constraintStart_toStartOf="@id/pbRegistrationPet"
+        app:layout_constraintEnd_toEndOf="@id/pbRegistrationPet"
+        app:layout_constraintTop_toBottomOf="@id/pbRegistrationPet"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

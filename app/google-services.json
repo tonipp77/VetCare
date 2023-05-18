@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "731252284015",
+    "firebase_url": "https://vetcare-1a533-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "vetcare-1a533",
+    "storage_bucket": "vetcare-1a533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731252284015:android:ad3dea330b1ccf88674b9a",
+        "android_client_info": {
+          "package_name": "com.vetcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731252284015-ieibmc4iqb0rolpa9g28nkfecdm0738t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRlHiwRQB266g6-eMXsefAAe3VyHGdQYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731252284015-ieibmc4iqb0rolpa9g28nkfecdm0738t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

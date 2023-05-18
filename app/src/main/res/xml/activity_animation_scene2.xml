@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:touchAnchorId="@+id/ivAnimation"
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="552dp"
+            android:layout_width="259dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/ivAnimation"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_editor_absoluteY="531dp"
+            motion:layout_constraintHorizontal_bias="0.498" />
+        <Constraint
+            motion:layout_editor_absoluteY="524dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvAnimation"
+            motion:layout_constraintTop_toBottomOf="@+id/ivAnimation"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView3"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/ivAnimation" />
+        <Constraint
+            android:layout_height="28dp"
+            android:layout_width="30dp"
+            android:id="@+id/ivArrow"
+            motion:layout_constraintTop_toBottomOf="@+id/ivAnimation"
+            motion:layout_constraintStart_toEndOf="@+id/tvAnimation" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="552dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="259dp"
+            android:id="@+id/ivAnimation"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.497"
+            android:layout_marginEnd="0dp"
+            android:translationX="245dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="641dp"
+            android:layout_height="19dp"
+            android:layout_width="18dp"
+            android:id="@+id/ivArrow"
+            motion:layout_editor_absoluteX="323dp"
+            android:translationX="100dp" />
+    </ConstraintSet>
+</MotionScene>

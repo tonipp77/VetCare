@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:padding="@dimen/common_padding_default"
+    tools:context=".view.VisitActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDateVisit"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/visit_date"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_calendar_month">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDateVisit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTimeVisit"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:text="@string/visit_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilDateVisit" />
+
+    <RadioGroup
+        android:id="@+id/rgTimeVisit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeVisit">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb1TimeVisit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/visit_10" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb2TimeVisit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/visit_12" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb3TimeVisit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/visit_5" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddVisit"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_padding_default"
+        android:layout_marginTop="@dimen/low_padding_default"
+        android:elevation="@dimen/common_padding_default"
+        android:text="@string/add_pet"
+        app:icon="@drawable/ic_add"
+        app:layout_constraintTop_toBottomOf="@+id/rgTimeVisit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/common_padding_default"
+    android:background="@drawable/wallpaper">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glUserModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNickNameUserModify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_nick_name"
+        app:endIconMode="clear_text"
+        app:helperText="@string/helperText_required"
+        app:startIconDrawable="@drawable/ic_person_pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNickNameUserModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgUserModify"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey_100"
+        android:layout_marginTop="@dimen/low_padding_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glUserModify"
+        app:layout_constraintTop_toBottomOf="@+id/tilNickNameUserModify"
+        app:layout_constraintDimensionRatio="16:9"/>
+
+    <ImageButton
+        android:id="@+id/ibUserModify"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_image_search"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="@+id/imgUserModify"
+        app:layout_constraintEnd_toEndOf="@+id/imgUserModify"
+        app:layout_constraintTop_toTopOf="@+id/imgUserModify"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUserModify"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pbUserModify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/low_padding_default"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:progress="75"
+        app:layout_constraintStart_toStartOf="@id/glUserModify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgUserModify"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvProgressUserModify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/low_padding_default"
+        tools:text="Subiendo...75%"
+        app:layout_constraintStart_toStartOf="@id/pbUserModify"
+        app:layout_constraintEnd_toEndOf="@id/pbUserModify"
+        app:layout_constraintTop_toBottomOf="@id/pbUserModify"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

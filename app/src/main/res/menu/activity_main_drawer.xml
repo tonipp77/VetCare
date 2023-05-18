@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Mi cuenta">
+        <menu>
+            <item android:id="@+id/nav_item_modify"
+                android:icon="@drawable/ic_update"
+                android:title="@string/menu_drawer_modify"/>
+
+            <item android:id="@+id/nav_item_delete"
+                android:icon="@drawable/ic_delete"
+                android:title="@string/menu_drawer_delete"/>
+
+            <item android:id="@+id/nav_item_close"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_drawer_close"/>
+        </menu>
+    </item>
+
+    <group>
+        <item android:id="@+id/nav_item_image"
+            android:icon="@drawable/ic_pets"
+            android:title="@string/menu_drawer_image"/>
+        <item android:id="@+id/nav_item_maps"
+            android:icon="@drawable/ic_location"
+            android:title="@string/menu_drawer_maps"/>
+    </group>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="low_padding_default">8dp</dimen>
+    <dimen name="width_item_pet">148dp</dimen>
+    <dimen name="card_elevation">24dp</dimen>
+    <dimen name="card_dimension">360dp</dimen>
+    <dimen name="width_default">296dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mlAnimation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_animation_scene2"
+    tools:context=".view.AnimationActivity">
+
+    <ImageView
+        android:id="@+id/ivAnimation"
+        android:layout_width="259dp"
+        android:layout_height="552dp"
+        app:srcCompat="@drawable/logocompletosinfondo"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deslice"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold"
+        android:textColor="@color/md_theme_light_inversePrimary"
+        android:shadowColor="@color/black"
+        android:shadowRadius="4"
+        android:shadowDy="2"
+        android:shadowDx="2"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="708dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_double_arrow"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

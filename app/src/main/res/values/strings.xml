@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">VetCare</string>
+    <string name="hint_name">Nombre</string>
+    <string name="helperText_required">Obligatorio</string>
+    <string name="helperText_nick_name">Introduzca el nombre que desea para identificarle</string>
+    <string name="hint_first_lastname">Primer Apellido</string>
+    <string name="hint_second_lastname">Segundo Apellido</string>
+    <string name="hint_phone">Numero de teléfono</string>
+    <string name="hint_nick_name">Nombre de usuario</string>
+    <string name="helperText_phone">Solo números, sin espacios en blanco</string>
+    <string name="title_send">Enviar</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_password_confirm">Repetir contraseña</string>
+    <string name="hint_repeatpassword">Repite la contraseña</string>
+    <string name="text_conditions">Acepto las condiciones</string>
+    <string name="text_btn_conditions">Ver las condiciones</string>
+    <string name="helperText_password">Mínimo 6 caracteres, una letra mayúscula y un caracter especial</string>
+    <string name="helperText_email">Introduzca su correo electrónico</string>
+    <string name="helperText_email_reset">Introduzca su correo electrónico del que quiere resetear la contraseña</string>
+    <string name="ruta_no_db">La ruta de la base de datos no existe</string>
+    <string name="error_db">Error en la base de datos</string>
+    <string name="email_error">Email no válido</string>
+    <string name="password_error">Formato de contraseña incorrecto</string>
+    <string name="no_signin">Error en los datos o no está registrado</string>
+    <string name="no_operating_data">Datos no operativos, intentelo más tarde</string>
+    <string name="password_notmatch">Las contraseñas no coinciden</string>
+    <string name="not_valid">Hay errores en uno o más datos</string>
+    <string name="exit_registration">Registro realizado con éxito</string>
+    <string name="ok_login">Inicio de sesión correcto</string>
+    <string name="deslice">Deslice la imagen hacia la derecha</string>
+    <string name="go_to_login">Ir a inicio de sesión</string>
+    <string name="reset_password">Resetear mi contraseña</string>
+    <string name="error_data_not_signup">Datos incorrecto o no está registrado</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="error">Ha ocurrido un error</string>
+    <string name="dog_breed">¿De que raza será mi próximo perro?</string>
+    <string name="go_to_registration">¿Aún no tienes cuenta? Registrarse</string>
+    <string name="ok">Acceder</string>
+    <string name="forgot_password">¿Olvidaste la contraseña?</string>
+    <string name="your_pets">Tus mascotas</string>
+    <string name="add_pet">Añadir mascota</string>
+    <string name="add_visit">Añadir consulta</string>
+    <string name="delete_pet">Eliminar mascota</string>
+    <string name="go_to_pets">Ver mis mascotas</string>
+    <string name="species">Especie</string>
+    <string name="breed">Raza</string>
+    <string name="gender">Género:</string>
+    <string name="is_dangerous">¿Es potencialmente peligroso?</string>
+    <string name="male">Macho</string>
+    <string name="female">Hembra</string>
+    <string name="welcome_private_zone">Bienvenido a su perfil privado</string>
+    <string name="menu_drawer_modify">Modificar Cuenta</string>
+    <string name="menu_drawer_delete">Eliminar Cuenta</string>
+    <string name="menu_drawer_close">Cerrar Sesión</string>
+    <string name="menu_drawer_pets">Mis Mascotas</string>
+    <string name="menu_drawer_image">Imágenes de perros por raza</string>
+    <string name="menu_drawer_adddate">Pedir cita para consulta</string>
+    <string name="menu_drawer_viewdate">Ver mis citas</string>
+    <string name="menu_drawer_maps">Donde estamos</string>
+    <string name="password_reset">Le hemos enviado un correo electrónico para cambiar su contraseña</string>
+    <string name="signout">Cerrar sesión</string>
+    <string name="confirm_signout">¿Está seguro que desea cerrar sesión?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="acept">Aceptar</string>
+    <string name="modify">Modificar</string>
+    <string name="add_pet_success">Mascota añadida con éxito</string>
+    <string name="update_pet_success">Mascota actualizada con éxito</string>
+    <string name="delete_acount_title">Eliminar mi cuenta de usuario</string>
+    <string name="delete_acount_message">¿Seguro que desea eliminar su cuenta de usuario?</string>
+    <string name="delete_acount_doit">Cuenta eliminada con éxito</string>
+    <string name="user_modify">Modificar usuario</string>
+    <string name="user_modify_successfully">Usuario modificado con éxito</string>
+    <string name="private_zone">Su zona privada</string>
+    <string name="visit_date">Seleccione la fecha de su consulta</string>
+    <string name="visit_time">Seleccione a la hora que quiere su consulta:</string>
+    <string name="visit_10">10:00 AM</string>
+    <string name="visit_12">12:00 AM</string>
+    <string name="visit_5">05:00 PM</string>
+    <string name="choose_breed">Elige una raza:</string>
+    <string name="password_error_noregister">Error en la contraseña o no está registrado</string>
+    <string name="send_email">Le hemos enviado un correo electrónico para cambiar su contraseña</string>
+    <string name="update">Actualizar</string>
+    <string-array name="dog_breed">
+        <item>affenpinscher</item>
+        <item>african</item>
+        <item>airedale</item>
+        <item>akita</item>
+        <item>appenzeller</item>
+        <item>australian</item>
+        <item>basenji</item>
+        <item>beagle</item>
+        <item>bluetick</item>
+        <item>borzoi</item>
+        <item>bouvier</item>
+        <item>boxer</item>
+        <item>brabancon</item>
+        <item>briard</item>
+        <item>buhund</item>
+        <item>bulldog</item>
+        <item>bullterrier</item>
+        <item>cattledog</item>
+        <item>chihuahua</item>
+        <item>chow</item>
+        <item>clumber</item>
+        <item>cockapoo</item>
+        <item>collie</item>
+        <item>coonhound</item>
+        <item>corgi</item>
+        <item>cotondetulear</item>
+        <item>dachshund</item>
+        <item>dalmatian</item>
+        <item>dane</item>
+        <item>deerhound</item>
+        <item>dhole</item>
+        <item>dingo</item>
+        <item>doberman</item>
+        <item>elkhound</item>
+        <item>entlebucher</item>
+        <item>eskimo</item>
+        <item>finnish</item>
+        <item>frise</item>
+        <item>germanshepherd</item>
+        <item>greyhound</item>
+        <item>groenendael</item>
+        <item>havanese</item>
+        <item>hound</item>
+        <item>husky</item>
+        <item>keeshond</item>
+        <item>kelpie</item>
+        <item>komondor</item>
+        <item>kuvasz</item>
+        <item>labradoodle</item>
+        <item>labrador</item>
+        <item>leonberg</item>
+        <item>lhasa</item>
+        <item>malamute</item>
+        <item>malinois</item>
+        <item>maltese</item>
+        <item>mastiff</item>
+        <item>mexicanhairless</item>
+        <item>mix</item>
+        <item>mountain</item>
+        <item>mountain</item>
+        <item>newfoundland</item>
+        <item>otterhound</item>
+        <item>ovcharka</item>
+        <item>papillon</item>
+        <item>pekinese</item>
+        <item>pembroke</item>
+        <item>pinscher</item>
+        <item>pitbull</item>
+        <item>pointer</item>
+        <item>pomeranian</item>
+        <item>poodle</item>
+        <item>pug</item>
+        <item>puggle</item>
+        <item>pyrenees</item>
+        <item>redbone</item>
+        <item>retriever</item>
+        <item>ridgeback</item>
+        <item>rottweiler</item>
+        <item>saluki</item>
+        <item>samoyed</item>
+        <item>schipperke</item>
+        <item>schnauzer</item>
+        <item>segugio</item>
+        <item>setter</item>
+        <item>sharpei</item>
+        <item>sheepdog</item>
+        <item>shiba</item>
+        <item>shihtzu</item>
+        <item>spaniel</item>
+        <item>spitz</item>
+        <item>springer</item>
+        <item>stbernard</item>
+        <item>terrier</item>
+        <item>tervuren</item>
+        <item>vizsla</item>
+        <item>waterdog</item>
+        <item>weimaraner</item>
+        <item>whippet</item>
+        <item>wolfhound</item>
+    </string-array>
+</resources>
